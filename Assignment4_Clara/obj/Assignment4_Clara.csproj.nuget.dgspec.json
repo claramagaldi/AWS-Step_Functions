@@ -1,0 +1,130 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Clara\\Google Drive\\CAN\\Centennial\\Semester 6\\COMP 306 - 002 (API Engineering & Cloud Computing)\\Assignments\\Assignment 4\\Assignment4_Clara\\Assignment4_Clara\\Assignment4_Clara.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Clara\\Google Drive\\CAN\\Centennial\\Semester 6\\COMP 306 - 002 (API Engineering & Cloud Computing)\\Assignments\\Assignment 4\\Assignment4_Clara\\Assignment4_Clara\\Assignment4_Clara.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Clara\\Google Drive\\CAN\\Centennial\\Semester 6\\COMP 306 - 002 (API Engineering & Cloud Computing)\\Assignments\\Assignment 4\\Assignment4_Clara\\Assignment4_Clara\\Assignment4_Clara.csproj",
+        "projectName": "Assignment4_Clara",
+        "projectPath": "C:\\Users\\Clara\\Google Drive\\CAN\\Centennial\\Semester 6\\COMP 306 - 002 (API Engineering & Cloud Computing)\\Assignments\\Assignment 4\\Assignment4_Clara\\Assignment4_Clara\\Assignment4_Clara.csproj",
+        "packagesPath": "C:\\Users\\Clara\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Clara\\Google Drive\\CAN\\Centennial\\Semester 6\\COMP 306 - 002 (API Engineering & Cloud Computing)\\Assignments\\Assignment 4\\Assignment4_Clara\\Assignment4_Clara\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Clara\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "AWSSDK.Core": {
+              "target": "Package",
+              "version": "[3.7.5.5, )"
+            },
+            "AWSSDK.DynamoDBv2": {
+              "target": "Package",
+              "version": "[3.7.2.1, )"
+            },
+            "AWSSDK.Rekognition": {
+              "target": "Package",
+              "version": "[3.7.6.1, )"
+            },
+            "AWSSDK.S3": {
+              "target": "Package",
+              "version": "[3.7.7.2, )"
+            },
+            "Amazon.Lambda.Core": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
+            "Amazon.Lambda.S3Events": {
+              "target": "Package",
+              "version": "[2.0.1, )"
+            },
+            "Amazon.Lambda.Serialization.Json": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
+            "Amazon.Lambda.Serialization.SystemTextJson": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "GrapeCity.Documents.Imaging": {
+              "target": "Package",
+              "version": "[4.2.0.727, )"
+            },
+            "GrapeCity.Documents.Pdf": {
+              "target": "Package",
+              "version": "[4.2.0.727, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.FileExtensions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

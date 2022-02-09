@@ -1,0 +1,58 @@
+{
+  "Comment": "State Machine",
+  "StartAt": "Is it an Image?",
+  "States": {
+    "Is it an Image?": {
+      "Type": "Task",
+      "Resource": "${IsImageTask.Arn}",
+      "Next": "Continue or Exit"
+    },
+    "Continue or Exit": {
+      "Type": "Choice",
+      "Choices": [
+        {
+          "Variable": "$.IsImage",
+          "NumericEquals": 1,
+          "Next": "ParallelBlock"
+        },
+        {
+          "Variable": "$.IsImage",
+          "NumericEquals": 0,
+          "Next": "Success"
+        }
+      ],
+      "Default": "Success"
+    },
+    "ParallelBlock": {
+      "Type": "Parallel",
+      "End": true,
+      "Branches": [
+        {
+          "StartAt": "Detect labels & Save to DynamoDB",
+          "States": {
+            "Detect labels & Save to DynamoDB": {
+              "Type": "Task",
+              "Resource": "${LabelsAndDynamoDBAsyncTask.Arn}",
+              "End": true
+            }
+          }
+        },
+        {
+          "StartAt": "Generate Thumbnail & Save to S3",
+          "States": {
+            "Generate Thumbnail & Save to S3": {
+              "Type": "Task",
+              "Resource": "${ThumbnailAndS3AsyncTask.Arn}",
+              "End": true
+            }
+          }
+        }
+      ]
+    },
+    "Success": {
+      "Type": "Task",
+      "Resource": "${SuccessTask.Arn}",
+      "End": true
+    }
+  }
+}
